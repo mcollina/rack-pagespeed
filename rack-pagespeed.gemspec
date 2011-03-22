@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Julio Cesar Ody"]
-  s.date = %q{2011-01-24}
+  s.date = %q{2011-03-22}
   s.description = %q{Web page speed optimizations at the Rack level}
   s.email = %q{julio@awesomebydesign.com}
   s.extra_rdoc_files = [
@@ -85,7 +85,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/juliocesar/rack-pagespeed}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.5.3}
   s.summary = %q{Web page speed optimizations at the Rack level}
   s.test_files = [
     "spec/config_spec.rb",
@@ -104,32 +104,31 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<nokogiri>, ["= 1.4.4"])
       s.add_runtime_dependency(%q<rack>, ["= 1.2.1"])
-      s.add_runtime_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_runtime_dependency(%q<jsmin>, ["= 1.0.1"])
+      s.add_development_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_runtime_dependency(%q<nokogiri>, ["= 1.4.4"])
       s.add_runtime_dependency(%q<rack>, ["= 1.2.1"])
-      s.add_runtime_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_runtime_dependency(%q<mime-types>, ["= 1.16"])
       s.add_runtime_dependency(%q<jsmin>, ["= 1.0.1"])
+      s.add_development_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_development_dependency(%q<rspec>, ["= 2.1.0"])
       s.add_development_dependency(%q<steak>, ["= 1.0.0"])
       s.add_development_dependency(%q<capybara>, ["= 0.4.0"])
     else
       s.add_dependency(%q<nokogiri>, ["= 1.4.4"])
       s.add_dependency(%q<rack>, ["= 1.2.1"])
-      s.add_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_dependency(%q<jsmin>, ["= 1.0.1"])
+      s.add_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_dependency(%q<nokogiri>, ["= 1.4.4"])
       s.add_dependency(%q<rack>, ["= 1.2.1"])
-      s.add_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_dependency(%q<mime-types>, ["= 1.16"])
       s.add_dependency(%q<jsmin>, ["= 1.0.1"])
+      s.add_dependency(%q<memcached>, ["= 1.0.2"])
       s.add_dependency(%q<rspec>, ["= 2.1.0"])
       s.add_dependency(%q<steak>, ["= 1.0.0"])
       s.add_dependency(%q<capybara>, ["= 0.4.0"])
@@ -137,13 +136,13 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<nokogiri>, ["= 1.4.4"])
     s.add_dependency(%q<rack>, ["= 1.2.1"])
-    s.add_dependency(%q<memcached>, ["= 1.0.2"])
     s.add_dependency(%q<jsmin>, ["= 1.0.1"])
+    s.add_dependency(%q<memcached>, ["= 1.0.2"])
     s.add_dependency(%q<nokogiri>, ["= 1.4.4"])
     s.add_dependency(%q<rack>, ["= 1.2.1"])
-    s.add_dependency(%q<memcached>, ["= 1.0.2"])
     s.add_dependency(%q<mime-types>, ["= 1.16"])
     s.add_dependency(%q<jsmin>, ["= 1.0.1"])
+    s.add_dependency(%q<memcached>, ["= 1.0.2"])
     s.add_dependency(%q<rspec>, ["= 2.1.0"])
     s.add_dependency(%q<steak>, ["= 1.0.0"])
     s.add_dependency(%q<capybara>, ["= 0.4.0"])
